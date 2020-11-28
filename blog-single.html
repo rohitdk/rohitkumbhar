@@ -129,9 +129,31 @@
                 can use most of the services with free of cost. Here you can see all the pricing details for SAAS, standalone & 
                 orchestration
               </p>
-              
+              <p>
+                So let's start with simple transactions with elasticsearch but before that install elasticsearch on your
+                machine from below link. once you installed elastic search, run elastic search batch file & check your elastic search server is up or not by
+                http://localhost:9200/ hitting this URL.
+              </p>
               <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="mb-0">http://localhost:9200/</p>
+              </blockquote>
+              <p>
+                You can hit this API using curl or rest-client or postman or browser. You will get the following output
+                In the request URL, we have added employees/_doc/emp_1, where employees is an index, _doc is mapping type 
+                used to separate a collection inside the same index, we can use custom mapping type & emp_1 is an id to 
+                differentiate collections inside the same index.
+              </p>
+              <blockquote class="blockquote">
+                Request URL: http://localhost:9200/employees/_doc/emp_1 <br>
+Request method: POST<br>
+Request Body:<br>
+{<br>
+ "email":"brad.gibson@example.com",<br>
+ "location":{<br>
+              "city": "kilcoole",<br>
+              "state": "waterford"<br>
+            }<br>
+}<br>
               </blockquote>
               <p>
                 Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
